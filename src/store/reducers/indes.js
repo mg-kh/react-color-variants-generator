@@ -1,0 +1,1 @@
+export { genetateColorReducer } from './generateColorReducer'
