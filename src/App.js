@@ -1,18 +1,17 @@
 import './App.css'
-import ColorPicker from './components/ColorPicker'
-import ColorPallets from './components/ColorPallets'
+import Home from './pages/Home'
+import Profile from './pages/Profile'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <section className="py-5 bg-white shadow-md sticky top-0 z-10">
-        <div className="container">
-          <ColorPicker />
-        </div>
-      </section>
-      <section>
-        <ColorPallets />
-      </section>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/profile" exact component={Profile}></Route>
+        </Switch>
+      </Router>
     </div>
   )
 }
