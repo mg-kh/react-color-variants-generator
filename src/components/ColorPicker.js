@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 
 import { generateColor } from '../store/actions/generateColorAction'
 import { Link } from 'react-router-dom'
-import SvgIcon from './SvgIcon'
 
 class ColorPicker extends Component {
   constructor(props) {
