@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import SvgIcon from '../components/SvgIcon'
-import SocialLoginButton from '../components/social_login_buttons/SocialLoginButton'
 import FacebookLogin from '../components/social_login_buttons/FacebookLogin'
 import GoogleLogin from '../components/social_login_buttons/GoogleLogin'
 import TwitterLogin from '../components/social_login_buttons/TwitterLogin'

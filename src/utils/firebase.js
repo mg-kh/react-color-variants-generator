@@ -1,15 +1,5 @@
 import { initializeApp } from 'firebase/app'
 
-const {
-  API_KEY,
-  AUTH_DOMAIN,
-  PROJECT_ID,
-  STORAGE_BUCKET,
-  MESSAGING_SENDER_ID,
-  APP_ID,
-  MEASUREMENT_ID,
-} = process.env
-
 const firebaseConfig = {
   apiKey: 'AIzaSyAsfNYD6u5EXlYlsJda_stg4lO8ZHxtVbY',
   authDomain: 'react-color-generator.firebaseapp.com',
