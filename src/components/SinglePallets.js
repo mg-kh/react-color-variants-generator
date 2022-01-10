@@ -57,14 +57,14 @@ class SinglePallets extends Component {
     return (
       <>
         <div
-          className="w-full h-52 cursor-pointer group relative"
+          className="w-full h-52 group relative"
           style={{ backgroundColor: `rgb(${rgb.join(', ')})` }}
         >
-          <div className="w-full h-1/4 bottom-0 absolute flex justify-center items-center flex-col">
+          <div className="w-3/4 h-1/6 bottom-4 rounded-lg absolute flex justify-center items-center flex-col -translate-x-1/2 left-1/2 ">
             <div className="w-1/2 h-full absolute hidden group-hover:block left-0 border-r">
               <button
                 onClick={() => this.handleCopy(hexColor)}
-                className="w-full h-full bg-white hover:bg-gray-100"
+                className="w-full h-full bg-white hover:bg-gray-100 rounded-l-lg shadow-md"
               >
                 {copiedIcon}
               </button>

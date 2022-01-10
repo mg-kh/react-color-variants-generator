@@ -5,7 +5,7 @@ class SaveButton extends Component {
     return (
       <>
         <div className="w-1/2 h-full absolute hidden group-hover:block right-0">
-          <button className="w-full h-full bg-white hover:bg-gray-100">
+          <button className="w-full h-full bg-white hover:bg-gray-100 rounded-r-lg shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
