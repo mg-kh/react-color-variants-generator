@@ -40,14 +40,10 @@ const loginWithGithub = () => {
 
 const loginWithTwitter = () => {
   const provider = new TwitterAuthProvider(app)
-  return signInWithPopup(auth, provider)
-    .then((result) => {
-      const { displayName, photoURL, uid } = result.user
-      return { displayName, photoURL, uid }
-    })
-    .catch((e) => {
-      console.log(e)
-    })
+  return signInWithPopup(auth, provider).then((result) => {
+    const { displayName, photoURL, uid } = result.user
+    return { displayName, photoURL, uid }
+  })
 }
 
 // Email and Password Login
